@@ -28,6 +28,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'tacahiroy/ctrlp-funky'
 Plugin 'majutsushi/tagbar'
+Plugin 'fatih/vim-go'
 Bundle 'Blackrush/vim-gocode'
 
 " All of your Plugins must be added before the following line
@@ -55,7 +56,7 @@ let g:go_gocode_unimported_packages = 1
 let g:ycm_semantic_triggers =  {'c' : ['->', '.'], 'go' : ['.'], 'cpp,objcpp' : ['->', '.', '::']}
 
 " let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-" let g:ycm_rust_src_path = '/home/me/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/'
+let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/'
 
 let g:ycm_python_interpreter_path = ''
 let g:ycm_python_sys_path = []
@@ -92,3 +93,13 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd FileType python call jedi#configure_call_signatures()
 autocmd FileType python setlocal completeopt-=preview
 let g:pymode_rope = 0
+
+
+
+
+autocmd FileType rust setlocal completeopt-=preview
+autocmd FileType go setlocal completeopt-=preview
+
+
+
+

@@ -116,9 +116,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
-fi
+#if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
+        #source /etc/profile.d/vte.sh
+#fi
 
 # Eternal bash history.
 # ---------------------
@@ -138,3 +138,7 @@ PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
 # Also set in .bash_profile.
 export GOPATH=$HOME/Workspace
 export PATH=$PATH:/usr/local/go/bin
+
+
+
+export PATH=$PATH:$HOME/.cargo/bin
