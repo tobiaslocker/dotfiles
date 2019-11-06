@@ -90,3 +90,5 @@ map <C-n> :NERDTreeToggle<CR>
 " let g:jedi#show_call_signatures = "0"
 "
 autocmd FileType python call jedi#configure_call_signatures()
+autocmd FileType python setlocal completeopt-=preview
+let g:pymode_rope = 0
