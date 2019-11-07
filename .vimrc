@@ -38,8 +38,8 @@ execute pathogen#infect()
 
 filetype plugin indent on    " required
 let g:ycm_seed_identifiers_with_syntax = 1
-let g:ycm_server_keep_logfiles = 1
-let g:ycm_server_log_level = 'debug'
+" let g:ycm_server_keep_logfiles = 1
+" let g:ycm_server_log_level = 'debug'
 
 let g:ycm_python_binary_path = '/usr/bin/python3'
 let g:ycm_server_python_interpreter = '/usr/bin/python3'
@@ -91,15 +91,12 @@ map <C-n> :NERDTreeToggle<CR>
 " let g:jedi#show_call_signatures = "0"
 "
 autocmd FileType python call jedi#configure_call_signatures()
-autocmd FileType python setlocal completeopt-=preview
 let g:pymode_rope = 0
 
 
 
 
+autocmd FileType python setlocal completeopt-=preview
 autocmd FileType rust setlocal completeopt-=preview
 autocmd FileType go setlocal completeopt-=preview
-
-
-
 
