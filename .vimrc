@@ -10,7 +10,6 @@ set shiftwidth=4
 set expandtab
 set hlsearch
 
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -53,10 +52,12 @@ let g:cpp_member_variable_highlight = 1
 let g:cpp_class_decl_highlight = 1
 let g:go_gocode_unimported_packages = 1
 
-let g:ycm_semantic_triggers =  {'c' : ['->', '.'], 'go' : ['.'], 'cpp,objcpp' : ['->', '.', '::']}
+let g:ycm_semantic_triggers = 
+            \{'c' : ['->', '.'], 'go' : ['.'], 'cpp,objcpp' : ['->', '.', '::']}
 
 " let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
-let g:ycm_rust_src_path = '~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/'
+let g:ycm_rust_src_path = 
+            \'~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/'
 
 let g:ycm_python_interpreter_path = ''
 let g:ycm_python_sys_path = []
@@ -93,10 +94,6 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd FileType python call jedi#configure_call_signatures()
 let g:pymode_rope = 0
 
-
-
-
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType rust setlocal completeopt-=preview
 autocmd FileType go setlocal completeopt-=preview
-
