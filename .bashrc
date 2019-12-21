@@ -196,19 +196,3 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]\u\[\e[m\]:\[\e[35m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\[\e[m\] "
-
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/me/Workspace/src/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/home/me/Workspace/src/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/home/me/Workspace/src/anaconda/etc/profile.d/conda.sh"
-    else
-        export PATH="/home/me/Workspace/src/anaconda/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
