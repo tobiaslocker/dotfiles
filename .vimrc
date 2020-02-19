@@ -10,6 +10,7 @@ set shiftwidth=4
 set expandtab
 set hlsearch
 
+
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 
@@ -17,6 +18,7 @@ call vundle#begin()
 " Keep Plugin commands between vundle#begin/end.
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'tpope/vim-ragtag'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'rust-lang/rust.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
@@ -97,3 +99,7 @@ let g:pymode_rope = 0
 autocmd FileType python setlocal completeopt-=preview
 autocmd FileType rust setlocal completeopt-=preview
 autocmd FileType go setlocal completeopt-=preview
+
+autocmd FileType html setlocal ts=2 sts=2 sw=2
+autocmd FileType htmldjango  setlocal ts=2 sts=2 sw=2
+autocmd FileType javascript  setlocal ts=2 sts=2 sw=2

@@ -196,3 +196,9 @@ function parse_git_dirty {
 }
 
 export PS1="\[\e[36m\]\u\[\e[m\]:\[\e[35m\]\W\[\e[m\]\[\e[33m\]\`parse_git_branch\`\[\e[m\] "
+
+
+alias dog='pygmentize -g -O style=colorful,linenos=1'
+
+
+
