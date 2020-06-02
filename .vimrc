@@ -17,6 +17,10 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " Keep Plugin commands between vundle#begin/end.
 " let Vundle manage Vundle, required
+Plugin 'yuezk/vim-js'
+Plugin 'maxmellon/vim-jsx-pretty'
+Plugin 'pangloss/vim-javascript'
+Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-ragtag'
 Plugin 'davidhalter/jedi-vim'
